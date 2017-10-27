@@ -18,7 +18,7 @@ df.to_excel('pinglun.xlsx')
 #使用open保存
 
 ''' 
-with open('pinglun.txt','w',encoding='utf-8') as f:
+with open('pinglun.txt', 'w', encoding='utf-8') as f:
 	for i in file:
 		f.write(i)
 '''
