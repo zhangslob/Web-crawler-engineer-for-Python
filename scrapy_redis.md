@@ -71,7 +71,7 @@ spider_name:requests
 
 为什么使用分布式爬虫，当然是因为会有很多链接需要跑，或者说会存放很多个`myspider:start_urls`到redis中，Redis是key-value数据库，面对key的内存搜索，优势明显，但是Redis吃的是纯内存，`myspider:start_urls`是一个有一个像`https://www.zhihu.com/people/cuishite`的链接，会占用大量的内存空间。之前就因为这个原因redis崩溃过无数次，那么如何优化？
 
-网络上有的方法是 [ scrapy_redis去重优化（已有7亿条数据），附Demo福利](https://blog.csdn.net/bone_ace/article/details/53099042)，可以参考下。如果你有好的解决方法，欢迎私信告诉我。
+网络上有的方法是 [ scrapy_redis去重优化（已有7亿条数据），附Demo福利](https://blog.csdn.net/bone_ace/article/details/53099042)，可以参考下。如果你有好的解决方法，欢迎私信告诉我。（保密原因就不介绍我们的处理方法了）
 
 ### Usage
 
@@ -103,7 +103,12 @@ Pipeline是这样写的
 
 看不懂为什么要把数据储存在redis里面，这不又加大redis储存负担吗？对于新手来说真的不友好，或许可以考虑提一个pr。
 
+# redis可视化工具
 
+最后介绍两个redis可视化工具
+1. [RedisDesktopManager](https://github.com/uglide/RedisDesktopManager) 比较出名的工具，但是经常会崩溃
+2. [kedis](https://github.com/uniorder/kedis) 国人开发的免费工具，这个界面还是可以的
 
+![](https://camo.githubusercontent.com/de76115b295d30222fa0d6a1b79ffc9b31fb04e5/687474703a2f2f7777772e6b656861772e636f6d2f696d616765732f73637265656e73686f742e706e67)
 
 
