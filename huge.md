@@ -16,13 +16,14 @@ copyright: true
 
 <!--more-->
 
-在真正获得数据前，我猜测：**胡歌男粉多**！！！
+在真正获得数据前，我的猜测：**胡歌男粉多**！！！
 
 # 问题来源
 
 
-我是胡椒粉，男的，我就想知道，微博上胡歌男粉多还是女粉多。老大镇楼
+我是胡椒粉，男的，我就想知道，微博上胡歌男粉多还是女粉多。哈哈，这真是一个有趣的问题，大家可以先猜测下。
 
+>老大镇楼
 ![](http://wx1.sinaimg.cn/large/48e837eegy1fe2dmkfsquj21tq1tqu0x.jpg)
 
 下面开始正式分析。
@@ -62,7 +63,7 @@ copyright: true
 
 返回数据：
 
-```
+```cmd
 cardlistInfo: {
 containerid: "1076031223178222",
 v_p: 42,
@@ -76,7 +77,7 @@ page: 2
 
 其他接口
 
-```
+```cmd
 转发： https://m.weibo.cn/api/statuses/repostTimeline?id=4238119278366780&page={}
 
 评论：https://m.weibo.cn/api/comments/show?id=4238119278366780&page={}
